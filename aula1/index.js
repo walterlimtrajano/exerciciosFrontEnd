@@ -50,15 +50,42 @@ const prompt = PromptSync();
 
 //console.log("A soma de " + a + " e " + b + " é: " + soma);
 
-const lojaDeFrutas = ["maçã", "banana", "laranja", "uva", "pera"];
+//const lojaDeFrutas = ["maçã", "banana", "laranja", "uva", "pera"];
 
-console.log("Frutas disponíveis na loja:");
+//console.log("Frutas disponíveis na loja:");
 
 //for (let i = 0; i < lojaDeFrutas.length; i++) {
   //  console.log("- " + lojaDeFrutas[i]);
 //}
 
-for (let fruta of lojaDeFrutas) {
-    console.log("- " + fruta);
+//for (let fruta of lojaDeFrutas) {
+  //  console.log("- " + fruta);
+//}
+
+//const x = Number(prompt("Digite o valor de x: "));
+//const y = Number(prompt("Digite o valor de y: "));
+
+//const soma = (x, y) =>  x + y;
+
+//console.log("A soma de " + x + " e " + y + " é: " + soma(x, y));
+
+function ehNumeroPar(numero) {
+    return numero % 2 === 0;
 }
+
+const ehPar = Number(prompt("Digite um número para verificar se é par ou ímpar: "));
+
+if (ehNumeroPar(ehPar)) {
+    console.log(ehPar + " é um número par. (true)");
+} else {
+    console.log(ehPar + " é um número ímpar. (false)");
+}
+
+function inverter(palavra) {
+    return palavra.split('').reverse().join('');
+}
+
+// Exemplo de uso:
+const texto = prompt("Digite uma palavra para inverter: ");
+console.log("Invertida:", inverter(texto));
 
