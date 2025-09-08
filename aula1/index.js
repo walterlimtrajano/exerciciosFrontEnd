@@ -32,6 +32,33 @@
 
 //console.log("A média das notas é:", media);
 
-const media = (7 + 8 + 6 + 9) / 4;
+//const media = (7 + 8 + 6 + 9) / 4;
 
-console.log("A média das notas é:", media);
+//console.log("A média das notas é:", media);
+
+import PromptSync from "prompt-sync";
+const prompt = PromptSync();
+
+//const nome = prompt("Digite seu nome: ");
+
+//console.log("Olá, " + nome + "!");
+
+//const a = Number(prompt("Digite o valor de a: "));
+//const b = Number(prompt("Digite o valor de b: "));
+
+//const soma = a + b;
+
+//console.log("A soma de " + a + " e " + b + " é: " + soma);
+
+const lojaDeFrutas = ["maçã", "banana", "laranja", "uva", "pera"];
+
+console.log("Frutas disponíveis na loja:");
+
+//for (let i = 0; i < lojaDeFrutas.length; i++) {
+  //  console.log("- " + lojaDeFrutas[i]);
+//}
+
+for (let fruta of lojaDeFrutas) {
+    console.log("- " + fruta);
+}
+
